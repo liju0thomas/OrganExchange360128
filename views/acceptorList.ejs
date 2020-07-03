@@ -1,0 +1,41 @@
+<html>
+
+<head>
+    <title>Organ Donor - Acceptor Form</title>
+</head>
+
+<body>
+    <h4>Hospital Details</h4>
+    <p><b>Hospital Name:</b> <%= hospital.name %></p>
+    <p><b>Hospital Address:</b> <%= hospital.address %></p>
+    <hr>
+    <h4>Acceptors List</h4>
+    <table>
+        <thead>
+            <tr>
+                <th>Slno</th>
+                <th>Name</th>
+                <th>Address</th>
+                <th>&nbsp;</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% for(i=0; i<acceptors.length; i++) { %>
+            <tr>
+                <td><%= i + 1 %> </td>
+                <td><%= acceptors[i].name %> </td>
+                <td><%= acceptors[i].address %> </td>
+                <td>
+                    <form action="/donate" method="post">
+                        <input type="hidden" name="donorId" value="<%= donorId %>">
+                        <input type="hidden" name="acceptorId" value="<%= acceptors[i].id %>">
+                        <input type="submit" value="Donate to <%= acceptors[i].name %>">
+                    </form>
+                </td>
+            </tr>
+            <% } %>
+        </tbody>
+    </table>
+</body>
+
+</html>

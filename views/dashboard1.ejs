@@ -1,0 +1,21 @@
+<html>
+
+<head>
+    <title>Organ Donor - Dashboard</title>
+</head>
+
+<body>
+    <h4>Hospital Details</h4>
+    <p><b>Hospital Name:</b> <%= hospital.name %></p>
+    <p><b>Hospital Address:</b> <%= hospital.address %></p>
+    <a href="/pair">Add Pairs</a><br>
+    <hr>
+    <h4>Search Donors</h4>
+    <form action="/searchDonors" method="get">
+        <input type="text" name="blood" placeholder="Blood">
+        <input type="text" name="hla" placeholder="HLA">
+        <input type="submit" value="Search">
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+<html>
+
+<head>
+ 
+  <title>
+    Welcome !
+  </title>
+
+  <link href="/stylesheets/afterlogin.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../stylesheets/style.css">
+
+
+<div class="inner-form">
+    <!-- <div class="input-field second-wrap">
+      <input type="text" name="blood" placeholder="Blood Group"> -->
+    <!-- </div> -->
+    <!-- <div class="input-field first-wrap">
+      <input type="text" name="hla" placeholder="HLA Details" />
+    </div> -->
+
+    <!-- <div class="input-field third-wrap">
+      <button class="btn-search" type="submit" value="Search">Search</button>
+    </div> -->
+
+<!-- </form> -->
+
+<form action="/pairList" method="get">
+  <div class="input-field third-wrap">
+    <button class="btn-search" type="submit" value="Search">CURRENTLY AVAIL</button>
+  </div>
+</form>
+
+<form action="/registered" method="get">
+<div class="input-field third-wrap">
+  <button class="btn-search" type="submit" value="Search">INFORM PAIRS</button>
+</div>
+</form>
+
+<form action="/plo" method="get">
+  <div class="input-field third-wrap">
+    <button class="btn-search" type="submit" value="Search">Succesful Transactions</button>
+  </div>
+</form>
+
+<form action="/pair" method="get">
+  <div class="input-field third-wrap">
+    <button class="btn-search" type="submit" value="Search">Add Pair(D&A)</button>
+  </div>
+</form>
+
+</div>
+</head>
+
+<body>
+  <div class="s01">
+
+    <div class="Hospital">
+      <p>WELCOME <%= hospital.name %></p>
+      <p><b>Hospital Name:</b> <%= hospital.name %></p>
+      <p><b>Hospital Address:</b> <%= hospital.address %></p>
+      <!-- <a href="/pair">ADD PAIR(D&A)</a><br> -->
+    </div>
+
+    <!-- <form action="/searchDonors" method="get">
+      <fieldset>
+        <legend>Search Donors:</legend>
+      </fieldset> -->
+
+  </div>
+</body>
+
+</html>

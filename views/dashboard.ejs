@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <!-- <link href="/stylesheets/afterlogin.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../stylesheets/style.css"> -->
+    <link rel="stylesheet" href="../stylesheets/1.css">
+  </head>
+  <body>
+    <br><br><br><br>
+    <div class="Hospital">
+        <p>WELCOME <%= hospital.name %>,</p>
+        <!-- <p><b>Hospital Name:</b> <%= hospital.name %></p>
+        <p><b>Hospital Address:</b> <%= hospital.address %></p> -->
+        <!-- <a href="/pair">ADD PAIR(D&A)</a><br> -->
+      </div>
+  
+    <form action="/pairList" method="get">
+      <button class="button button1" type="submit" value="Search">CURRENTLY AVAIL</button>
+    </form>
+    <br><br>
+
+    <form action="/registered" method="get">
+      <button class="button button2" type="submit" value="Search">INFORM PAIR</button>
+    </form>
+    <br><br>
+
+    <form action="/plo" method="get">
+      <button class="button button3" type="submit" value="Search">SUCCESSFUL TRANSACTION</button>
+    </form>
+    <br><br>
+
+    <form action="/pair" method="get">
+      <button class="button button4" type="submit" value="Search">ADD PAIR</button>
+    </form>
+    <br><br><br><br>
+ 
+
+  </body>
+</html>
+
+
