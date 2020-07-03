@@ -1,0 +1,63 @@
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 160px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  
+  .button1 {
+    background-color: blue; 
+    color: black; 
+    border: 2px solid #4CAF50;
+    align-items: center;
+    align-content: center;
+  }
+  
+  .button1:hover {
+    background-color: #4CAF50;
+    color: rgb(29, 15, 15);
+  }
+  .neww
+  {
+      font: caption;
+      color: white;
+      font-display:white;
+      font-size: xx-large;
+      font-stretch: expanded;
+      text-align: center;
+      text-decoration-color: white;
+      image-rendering: optimizeQuality;
+      border-image-outset: inherit;
+      list-style-image: inherit;
+      shape-image-threshold: inherit;
+      border-image-slice: unset;
+  }
+  .naya
+  {
+      font: caption;
+      font-size: xx-large;
+      font-stretch: expanded;
+      text-align: center;
+      text-decoration-color: black;
+      image-rendering: optimizeQuality;
+      border-image-outset: inherit;
+      list-style-image: inherit;
+      shape-image-threshold: inherit;
+      border-image-slice: unset;
+  }
+  
+  .Hospital {
+    font-size: 30pt;
+    color: white;
+  }
+  
+  body {
+    background-image: url("../images/2.jpg");
+  }
