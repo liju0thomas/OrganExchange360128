@@ -7,7 +7,7 @@
 
 ## Steps to Execute
 1. Download/Clone the code  
-```git clone https://github.com/liju0thomas/OrganExchange360128
+```git clone https://github.com/liju0thomas/OrganExchange360128```
 2. Open **Postgres** and execute the command in *pg.sql*.
 3. Open **Ganache GUI**.
 4. Install packages  
